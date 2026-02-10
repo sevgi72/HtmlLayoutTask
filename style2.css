@@ -1,0 +1,31 @@
+.page-icon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30%;
+    background-color: #bc7555;
+    width:180px;
+    height:180px;
+    border-radius:60px 0 60px 0;
+    /* ozu sehifenin ortasina kecsin deye yaziriq */
+    margin:0 auto;
+  
+}
+.page-icon img {
+    width: 80px;  
+    height: 80px; 
+    /* qara ikonun rengi  taskdaki sekildeki kimi ag olsun deye */
+    filter:brightness(0) invert(1);
+}
+.header {
+    text-align: center;
+    margin-top: 20px;
+}
+.description {
+    text-align:center;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #666;
+    /* setriler bir bitne cox yapismasin deye edirik */
+    line-height: 1.5;
+}
