@@ -5,7 +5,6 @@ body {
     padding: 0;
 }
 
-/* Section layout: sol və sağ */
 #page {
     display: flex;
     justify-content: space-between;
@@ -15,7 +14,7 @@ body {
     gap: 40px;
 }
 
-/* Sol tərəf */
+
 .left-content {
     flex: 1;
 }
@@ -23,22 +22,47 @@ body {
 .text h1 {
     font-size: 36px;
     margin: 0;
+    position: relative; /* ::after üçün mütləqdir */
+    padding-bottom: 10px; /* xətt üçün yer */
 }
 
 .text span {
     display: block;
     font-size: 24px;
     color: #555;
-    margin-top: 5px;
+    margin-top: -10px;
 }
 
-.text-description p {
+.text-description {
     font-size: 18px;
     color: #666;
-    margin-top: 20px;
+    margin-top: 60px;
+    position: relative;
+    padding-bottom: 10px; /* xətt üçün yer */
 }
 
-/* Sağ tərəf: 2x2 grid */
+
+.text h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom:-50px;
+    width: 25%; /* bütün başlığın altında olsun */
+    height: 4px; /* xətt qalınlığı */
+    background: linear-gradient(
+        90deg, 
+        rgba(180, 82, 58, 1) 2%, 
+        rgba(212, 206, 39, 1) 19%, 
+        rgba(29, 253, 74, 1) 32%, 
+        rgba(42, 152, 242, 1) 46%, 
+        rgba(136, 109, 206, 1) 57%, 
+        rgba(252, 69, 200, 1) 72%, 
+        rgba(252, 69, 69, 1) 85%
+    );
+    border-radius: 2px;
+}
+
+
 .page-icons {
     flex: 1;
     display: grid;
@@ -46,7 +70,7 @@ body {
     gap: 20px;
 }
 
-/* Hər icon card */
+
 .icon {
     background-color: #fff;
     padding: 20px;
@@ -73,15 +97,4 @@ body {
     margin: 0;
 }
 
-/* Responsive: dar ekran üçün sol və sağ alt-alta */
-@media (max-width: 768px) {
-    #page {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .page-icons {
-        grid-template-columns: 1fr;
-        width: 100%;
-    }
-}
