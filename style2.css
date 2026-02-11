@@ -1,36 +1,66 @@
-.page-icon{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30%;
-    background-color: #bc7555;
-    width:200px;
-    height:180px;
-    border-radius:0 60px 0 60px;
-    /* ozu sehifenin ortasina kecsin deye yaziriq */
-    margin:0 auto;
-  
+/* Bütün kartları 2x2 düzmək üçün */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 4%; 
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.page-icon img {
-    width: 80px;  
-    height: 80px; 
-    /* qara ikonun rengi taskda sekildeki kimi ag olsun deye */
-    filter:brightness(0) invert(1);
+
+/* Kartın özü */
+.card {
+    display: flex;
+    width: 48%; /* 2 dənə yan-yana */
+    gap: 20px;
+    align-items: flex-start;
+    /* Əgər yazılar dağınıqdırsa, bu alt-alta düzülüşü təmin edir: */
+    flex-wrap: wrap; 
 }
-.header {
-    font-size:65px;
-    margin-left: 40%;
-    margin-right:40%;
-    text-align: center;
-    margin-top: -50px;
+
+/* Şəkil bloku solda sabit qalsın */
+.card-image {
+    flex: 0 0 180px; /* Şəklin eni */
+    height: 180px;
 }
-.description {
-    text-align:center;
-    margin-top: -70px;
-    margin-left: 25%;
-    margin-right:25%;
-    font-size: 18px;
-    color: #666;
-    /* setriler bir bitne cox yapismasin deye edirik */
-    line-height: 1.5;
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* DİQQƏT: HTML-də yazıların hamısı ayrı div olduğu üçün 
+   onları bir qrupa yığmaq əvəzinə bu üsulu yoxlayaq: */
+
+.card-title, .card-text, .card-link {
+    /* Bu üçünü şəklin sağındakı boşluğa itələyirik */
+    flex: 1 1 250px; 
+    margin-left: 0;
+    width: calc(100% - 200px); /* Şəkildən qalan yeri tutsunlar */
+}
+
+/* Yazıların alt-alta düşməsini məcburi etmək üçün */
+.card-title { order: 1; }
+.card-text { order: 2; }
+.card-link { order: 3; }
+
+/* Başlıq və mətn stilləri */
+.card-title h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.card-text p {
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.4;
+}
+
+.card-link h5 {
+    margin: 0;
+    font-weight: bold;
+    color: #555;
 }

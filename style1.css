@@ -1,0 +1,36 @@
+.page-icon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30%;
+    background-color: #bc7555;
+    width:200px;
+    height:180px;
+    border-radius:0 60px 0 60px;
+    /* ozu sehifenin ortasina kecsin deye yaziriq */
+    margin:0 auto;
+  
+}
+.page-icon img {
+    width: 80px;  
+    height: 80px; 
+    /* qara ikonun rengi taskda sekildeki kimi ag olsun deye */
+    filter:brightness(0) invert(1);
+}
+.header {
+    font-size:65px;
+    margin-left: 40%;
+    margin-right:40%;
+    text-align: center;
+    margin-top: -50px;
+}
+.description {
+    text-align:center;
+    margin-top: -70px;
+    margin-left: 25%;
+    margin-right:25%;
+    font-size: 18px;
+    color: #666;
+    /* setriler bir bitne cox yapismasin deye edirik */
+    line-height: 1.5;
+}
