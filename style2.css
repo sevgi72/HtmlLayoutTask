@@ -1,27 +1,24 @@
-/* Bütün kartları 2x2 düzmək üçün */
+
 .cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px 4%; 
-    padding: 20px;
+    gap: 40px 4%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Kartın özü */
 .card {
-    display: flex;
-    width: 48%; /* 2 dənə yan-yana */
+    display: flex;          
+    width: 48%;            
     gap: 20px;
     align-items: flex-start;
-    /* Əgər yazılar dağınıqdırsa, bu alt-alta düzülüşü təmin edir: */
-    flex-wrap: wrap; 
+    flex-direction:column;
 }
 
-/* Şəkil bloku solda sabit qalsın */
 .card-image {
-    flex: 0 0 180px; /* Şəklin eni */
+    width: 180px;
     height: 180px;
+    flex-shrink: 0;         
 }
 
 .card-image img {
@@ -30,22 +27,8 @@
     object-fit: cover;
 }
 
-/* DİQQƏT: HTML-də yazıların hamısı ayrı div olduğu üçün 
-   onları bir qrupa yığmaq əvəzinə bu üsulu yoxlayaq: */
 
-.card-title, .card-text, .card-link {
-    /* Bu üçünü şəklin sağındakı boşluğa itələyirik */
-    flex: 1 1 250px; 
-    margin-left: 0;
-    width: calc(100% - 200px); /* Şəkildən qalan yeri tutsunlar */
-}
 
-/* Yazıların alt-alta düşməsini məcburi etmək üçün */
-.card-title { order: 1; }
-.card-text { order: 2; }
-.card-link { order: 3; }
-
-/* Başlıq və mətn stilləri */
 .card-title h3 {
     margin: 0 0 10px 0;
     font-size: 1.3rem;
