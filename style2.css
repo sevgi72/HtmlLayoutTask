@@ -1,24 +1,25 @@
-
 .cards {
     display: flex;
     flex-wrap: wrap;
     gap: 40px 4%;
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 5%;
 }
 
 .card {
-    display: flex;          
-    width: 48%;            
+    display: flex;
+    width: 48%;
     gap: 20px;
     align-items: flex-start;
-    flex-direction:column;
+    /* yazmiriq cunki solda olanlari 1 dive aldiq ve default onsux rowdu */
+    /* flex-direction:column; */
 }
 
 .card-image {
     width: 180px;
     height: 180px;
-    flex-shrink: 0;         
+    flex-shrink: 0;
 }
 
 .card-image img {
@@ -46,4 +47,5 @@
     margin: 0;
     font-weight: bold;
     color: #555;
+    margin-top:5%;
 }
