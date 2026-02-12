@@ -1,6 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+    /* bunun 2 novu var content-box ve border-box border boxda
+    padding ve border daxil olcu sabit qalir amma content-boxda
+     padding ve border elave edilir olcu boyuyur */
     box-sizing: border-box;
 }
 
@@ -14,23 +17,26 @@ body {
 }
 
 .card {
-    background: #ffffff;
+    background-color: rgb(248, 248, 238);
     width: 450px;
     padding: 60px 40px;
     text-align: center;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    /* bu hemin wedding cardinin arxa fondan ferqlenmeis ucun 3d goruntu qatan  kolgedir*/
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .script-title {
     font-family: 'Great Vibes', cursive;
-    font-size: 60px;
+    font-size: 95px;
+    /* metnin qalinligini gosterir eger normal vermesydik onda
+    the wedding of texti qalin olacaqdi */
     font-weight: normal;
     margin-bottom: 40px;
 }
 
 .names {
     font-size: 16px;
-    letter-spacing: 3px;
+    letter-spacing: 3px; /*herfler arasindaki mesafe*/
     font-weight: 600;
     margin-bottom: 25px;
 }
