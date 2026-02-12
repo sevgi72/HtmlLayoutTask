@@ -1,5 +1,6 @@
 .cards {
     display: flex;
+    /* wwrap onu edir:ki eger content bir setire sigmirsa yeni setirden avtomatik yaz */
     flex-wrap: wrap;
     gap: 40px 4%;
     max-width: 1200px;
@@ -10,7 +11,9 @@
 .card {
     display: flex;
     width: 48%;
+    /* flex ve gridler arasindaki boslugu teyin edir,gap bir sozle elementler arasinda mesafe yaradir */
     gap: 20px;
+    /* flex start da elemntler yuxari terefde yerlesdirilir(containerin) */
     align-items: flex-start;
     /* yazmiriq cunki solda olanlari 1 dive aldiq ve default onsux rowdu */
     /* flex-direction:column; */
@@ -19,7 +22,8 @@
 .card-image {
     width: 180px;
     height: 180px;
-    flex-shrink: 0;
+    /* container daralanda sekilin olcusunu meselen  kicildende nece daralacagini teyin edir*/
+    flex-shrink: 0; /*0 element container draralanda bele kicile bilmez demekdir*/
 }
 
 .card-image img {

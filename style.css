@@ -16,14 +16,15 @@ body {
 
 
 .left-content {
+    /* elementler bos saheni beraber paylayacaq  boyuyecekse hamisi beraber olcude boyuyecek daralandada eyni olcude daralacaq*/
     flex: 1;
 }
 
 .text h1 {
     font-size: 36px;
     margin: 0;
-    position: relative; /* ::after üçün mütləqdir */
-    padding-bottom: 10px; /* xətt üçün yer */
+    position: relative; /* ::after ucun mutleqdir */
+    padding-bottom: 10px; /* xett ucun yer*/
 }
 
 .text span {
@@ -47,8 +48,8 @@ body {
     position: absolute;
     left: 0;
     bottom:-50px;
-    width: 25%; /* bütün başlığın altında olsun */
-    height: 4px; /* xətt qalınlığı */
+    width: 25%; /* butun basligin altinda olsun deye yaziriq*/
+    height: 4px; /* xettin qalinligi */
     background: linear-gradient(
         90deg, 
         rgba(180, 82, 58, 1) 2%, 
@@ -65,7 +66,9 @@ body {
 
 .page-icons {
     flex: 1;
+    /* grid iki olculu 2x2 elemek ucundur */
     display: grid;
+    /* sutnlarin nece ve hansi olcude olacagini duzenleyir */
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
@@ -76,11 +79,13 @@ body {
     padding: 20px;
     border-radius: 12px;
     text-align: center;
+    /* shadow 3olculu goruntu verir */
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .icon:hover {
+    /* hover effekti ustune nursoru getirende animasyonlu gorunsun deyedir */
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
