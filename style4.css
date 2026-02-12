@@ -1,0 +1,14 @@
+.section-title{
+    color:#34b1eb;
+    /* yazi simvollarinin boyuk olcude olmasina regmen nazik yazilmasina boldlasdirilmamasina xidmet edir*/
+    font-weight:normal; 
+}
+.cv-container {
+    gap: 40px;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+.cv-header{
+    font-family:'Times New Roman', Times, serif;
+}
