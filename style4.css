@@ -1,14 +1,68 @@
 .section-title{
     color:#34b1eb;
-    /* yazi simvollarinin boyuk olcude olmasina regmen nazik yazilmasina boldlasdirilmamasina xidmet edir*/
+    /* yazi simvollarinin boyuk olcude olmasina regmen nazik yazilmasina, boldlasdirilmamasina xidmet edir*/
     font-weight:normal; 
 }
+
+
 .cv-container {
     gap: 40px;
     max-width: 1200px;
     margin: 60px auto;
+    /* a4kimi gorunsun deye olculeri bele veririk */
     padding: 0 20px;
+    width: 210mm;
+    min-height: 297mm;    
+    background: white;
 }
+
+
 .cv-header{
     font-family:'Times New Roman', Times, serif;
+    margin-left: 2%;
+    margin-bottom:10%;
+    margin-top:-35px;
 }
+
+
+.cv-content {
+    display: flex;
+    gap: 40px;
+}
+
+
+.cv-header h1 {
+    font-size: 46px;
+    font-weight: lighter;
+    color:rgb(78, 76, 76);
+}
+
+
+.cv-header p{
+    margin-top:-25px;
+    font-size: 20px;
+    color:rgb(98, 96, 96);
+}
+
+
+.cv-header .contact-info{
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.cv-header .phone-number{
+    font-weight: bold;
+}
+
+
+.column-left , .column-right {
+    border-left-style: dashed;
+    border-left-color: grey;
+    padding-left:15px;
+    margin-left:15px;
+}
+
+
+
+
