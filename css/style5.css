@@ -1,23 +1,257 @@
-.header{
-    width:100%;
-    height:30px;
-    background-color:navy;
-    display:flex;
-   
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.left text{
-    display: flex;
-    justify-content: flex-start;
-     margin-top: 0px;
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    overflow-x: hidden; /* Səhifənin sağa-sola sürüşməməsi üçün ehtiyat tədbiri */
 }
-.right {
+
+/* --- TOP BAR --- */
+.top-bar {
+    width: 100%;
+    height: 35px;
+    background-color: #002b49; 
     display: flex;
-    justify-content: flex-end;
-     margin-top: 0px;
-}
-.middle{
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-     margin-top: 0px;
+    padding: 0 15px;
+    color: white;
+}
+
+.left-section, .device-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo i {
+    font-size: 24px;
+}
+
+.blue-text {
+    color: #44a6f0;
+}
+
+.device-icons i {
+    color: #d7e5f3;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.middle-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.middle-section i {
+    font-size: 10px;
+    color: #8da1b5;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right-section i {
+    color: #8da1b5;
+    cursor: pointer;
+}
+
+.download-btn {
+    background-color: #0099ff;
+    color: white;
+    border: none;
+    padding: 9px 15px;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #007acc;
+}
+
+/* --- NAVBAR --- */
+.main-navbar {
+    background-color: #ffffff;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); 
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.main-navbar .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #364146;
+    font-family: "Raleway", sans-serif;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #55626b;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover, 
+.nav-links a.active {
+    color: #0099ff; 
+}
+
+/* --- DROPDOWN --- */
+.dropdown { position: relative; }
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: #fff;
+    list-style: none;
+    padding: 10px 0;
+    min-width: 200px;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    z-index: 99;
+}
+.dropdown:hover > .dropdown-menu { display: block; }
+
+.nav-social {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-social a {
+    color: #a2b1bb;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+
+#first-page {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center; 
+    background-image: url(../images3/hero-bg.png); 
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 70%; 
+}
+
+.content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.inner-text {
+    flex: 1; 
+}
+
+.inner-text h1 {
+    font-size: 48px;
+    color: #363a3c;
+    margin-bottom: 15px;
+}
+
+.inner-text p {
+    font-size: 20px;
+    color: #55626b;
+}
+
+.inner-text .buttons {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+    align-items: center;
+}
+
+.button-1 {
+    background-color: #098de4;
+    border-radius: 5px;
+    padding: 12px 30px; 
+    cursor: pointer;
+    transition: 0.3s ease;
+    overflow:hidden;
+}
+
+.button-2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    overflow:hidden;
+}
+
+.button-2 i {
+    color: #098de4;
+    font-size: 32px;
+}
+
+.right {
+    flex: 1; 
+    text-align: right; 
+}
+
+.right img {
+    max-width: 100%;
+    height: auto;
+    transform: scale(1.0); 
+    margin-top:150px;
+}
+.nav-links{
+    margin-left:380px;
+}
+.button-1:hover {
+    background-color: #44a6f0; 
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+.button-2:hover{
+    color: #44a6f0; 
 }

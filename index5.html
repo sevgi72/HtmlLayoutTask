@@ -1,44 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scaffold</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style5.css">
 </head>
+
 <body>
     <section id="site-container">
-        <div class="header">
-            <div class="left">
-                <div class="logo">
-                    <i style="color:rgb(55, 55, 202)" class="fa-brands fa-bootstrap"></i>
-                </div>
-                <div class="name">
-                    <p>BOOTSTRAP<span>MADE</span></p>
+        <header class="top-bar">
+            <div class="left-section">
+                <a href="#" class="logo">
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <span>BOOTSTRAP<b class="blue-text">MADE</b></span>
+                </a>
+                <div class="device-icons">
+                    <i class="fa-solid fa-desktop"></i>
+                    <i class="fa-solid fa-tablet-screen-button"></i>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
                 </div>
             </div>
+
+            <div class="middle-section">
+                <i class="fa-solid fa-chevron-left"></i>
+                <span class="project-name">Scaffold</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <div class="right-section">
+                <i class="fa-solid fa-share-from-square"></i>
+                <button class="download-btn">
+                    <i style="color:white;" class="fa-solid fa-download"></i>
+                    DOWNLOAD
+                </button>
+            </div>
+
+        </header>
+        <div class="header-part-2">
             <div class="middle">
-                <i class="fa-solid fa-less-than"></i>
-                <div class="text">
-                    <h4>Scaffold</h4>
+                <nav class="main-navbar">
+                    <div class="container">
+                        <div class="nav-logo">
+                            <h1>Scaffold</h1>
+                        </div>
+                        <ul class="nav-links">
+                            <li><a href="#" class="active">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li class="dropdown">
+                                <a href="#">Dropdown <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Drop Down 1</a></li>
+                                    <li class="deep-dropdown">
+                                        <a href="#">Deep Drop Down <i class="fa-solid fa-chevron-right"></i></a>
+                                        <ul class="deep-menu">
+                                            <li><a href="#">Deep Drop Down 1</a></li>
+                                            <li><a href="#">Deep Drop Down 2</a></li>
+                                            <li><a href="#">Deep Drop Down 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Drop Down 2</a></li>
+                                    <li><a href="#">Drop Down 3</a></li>
+                                </ul>
+                            </li>
+                            </li>
+                            <div class="cont">
+                                     <li><a href="#">Contact</a></li>
+                            </div>
+                       
+                        </ul>
+
+                        <div class="nav-social">
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <section id="first-page">
+        <div class="content">
+            <div class="inner-text">
+                <div class="left">
+                    <h1>Welcome to Our Website</h1>
+                    <p>We are team of talented designers making websites with Bootstrap</p>
                 </div>
-                <i class="fa-solid fa-greater-than"></i>
+                <div class="buttons">
+                    <div class="button-1">
+                        <p style="color:white; font-size:18px;">Get Started</p>
+                    </div>
+                    <div class="button-2">
+                        <i class="fa-regular fa-circle-play"></i>
+                        <h3>Watch Video </h3>
+                    </div>
+                </div>
             </div>
             <div class="right">
-                <i class="fa-solid fa-file-arrow-down"></i>
-                <i class="fa-solid fa-download"></i>
-                <h4>DOWNLOAD</h4>
+                <img src="./images3/hero-img.png">
             </div>
         </div>
-        <div class="main">
-
-        </div>
-        <div class="footer">
-            
-        </div>
-        
-        
     </section>
 </body>
+
 </html>
