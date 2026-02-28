@@ -255,3 +255,10 @@ body {
 .button-2:hover{
     color: #44a6f0; 
 }
+#second-page .right {
+    display:flex;
+    align-items: flex-start;
+    width:650px;
+    height:650px;
+    margin-left:100px;
+}
