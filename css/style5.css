@@ -140,7 +140,6 @@ body {
     color: #0099ff; 
 }
 
-/* --- DROPDOWN --- */
 .dropdown { position: relative; }
 .dropdown-menu {
     display: none;
@@ -320,3 +319,84 @@ body {
 #second-page .right .container .button :hover i  {
     transform:translatex(5px);
 }
+#third-page .lines h1{
+    width:340px;
+    height:4px;
+    color:#a2b1bb;
+    background-color:#e5e9ea;
+    
+}
+#third-page .titles , .lines {
+    display:flex;
+    margin:0 100px;
+    gap:10px;
+}
+#third-page .titles {
+    gap:260px;
+    margin-left:230px;
+    font-size:18px;
+    margin-bottom:10px;
+}
+#third-page .lines .different-one h1{
+    color:#098de4;
+    background-color:#098de4;
+}
+#third-page .left {
+    margin-left:100px;
+    margin-top:100px;
+    margin-right:760px;
+
+}
+#third-page .left h1{
+    color:#364146;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#third-page .left .line h1{
+    margin-top:15px;
+    height:3px;
+    width:70px;
+    color:#098de4;
+    background-color:#098de4;
+}
+#third-page .left p{
+    margin-top:20px;
+    color:#364146;
+
+}
+#third-page ul {
+    list-style: none; 
+    padding-left: 0;
+    margin-top:30px;
+}
+
+ #third-page ul li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+
+
+#third-page ul li::before {
+    content: "\f00c"; 
+    font-family: "Font Awesome 6 Free"; 
+    font-weight: 900; 
+    position: absolute;
+    left: 0;
+    top: 5px; 
+    color: #098de4;
+    font-size: 18px;
+}
+
+#third-page ul li p {
+    margin: 0;
+    display: inline;
+}
+#third-page .container .right img{
+    width:600px;
+    height:430px;
+}
+#third-page .container .right{
+    margin-top:-480px;
+    margin-right:100px;
+}
+
